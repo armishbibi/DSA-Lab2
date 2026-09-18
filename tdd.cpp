@@ -40,6 +40,12 @@ void TestDescArray(){
     assert(isSorted(arr, 5) == false);
 }
 
+//test case 6
+void TestNegArray(){
+    int arr[] = {-5, -4, -3, -2, -1};
+    assert(isSorted(arr, 5) == true);
+}
+
 main(){
     //calling the first test function
     TestSortedArray();
@@ -55,4 +61,7 @@ main(){
 
     //calling the fifth test function
     TestDescArray();
+
+    //calling the fifth test funtion
+    TestNegArray();
 }
