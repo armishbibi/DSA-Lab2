@@ -52,6 +52,12 @@ void testSameArr()
     int arr[] = {5, 5, 5, 5, 5};
     assert(isSorted(arr, 5) == true);
 }
+
+//testing edge case
+void edgecase(){
+    int arr[] = {};
+    assert(isSorted(arr, 0) == true);
+}
 main(){
     //calling the first test function
     TestSortedArray();
@@ -73,4 +79,8 @@ main(){
 
     //calling the seventh test function
     testSameArr();
+
+    //added the edge case
+    edgecase();
+
 }
