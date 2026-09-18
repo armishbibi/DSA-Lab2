@@ -5,7 +5,7 @@ using namespace std;
 //sorting function
 bool isSorted(const int* arr, const int size){
     for(int i = 0; i < size - 1; i ++){
-        if(i > i + 1){
+        if(arr[i] > arr[i + 1]){
             return false;
         }}
     return true;
@@ -16,6 +16,7 @@ void TestSortedArray(){
     assert(isSorted(arr, 6) == true);
 }
 
+//test case 2
 void TestUnsortedArray(){
     int arr[] = {1, 3, 5, 6, 13, 12};
     assert(isSorted(arr, 6) == false);
