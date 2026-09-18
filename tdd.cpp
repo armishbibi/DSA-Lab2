@@ -22,10 +22,18 @@ void TestUnsortedArray(){
     assert(isSorted(arr, 6) == false);
 }
 
+//test case 3
+void TestDupSortedArray(){
+    int arr[] = {1, 3, 6, 6, 13, 24};
+    assert(isSorted(arr, 6) == true);
+}
 main(){
     //calling the first test function
     TestSortedArray();
 
     //calling the second test function
     TestUnsortedArray();
+
+    //calling the third test function
+    TestDupSortedArray();
 }
