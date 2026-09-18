@@ -13,11 +13,18 @@ bool isSorted(const int* arr, const int size){
 //test case1
 void TestSortedArray(){
     int arr[] = {1, 3, 5, 6, 13, 64};
-
     assert(isSorted(arr, 6) == true);
+}
+
+void TestUnsortedArray(){
+    int arr[] = {1, 3, 5, 6, 13, 12};
+    assert(isSorted(arr, 6) == false);
 }
 
 main(){
     //calling the first test function
     TestSortedArray();
+
+    //calling the second test function
+    TestUnsortedArray();
 }
