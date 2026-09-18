@@ -27,6 +27,12 @@ void TestDupSortedArray(){
     int arr[] = {1, 3, 6, 6, 13, 24};
     assert(isSorted(arr, 6) == true);
 }
+
+//test case 4
+void TestsingledArray(){
+    int arr[] = {1};
+    assert(isSorted(arr, 1) == true);
+}
 main(){
     //calling the first test function
     TestSortedArray();
@@ -36,4 +42,7 @@ main(){
 
     //calling the third test function
     TestDupSortedArray();
+
+    //calling the fourth test function
+    TestsingledArray();
 }
