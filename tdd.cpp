@@ -33,6 +33,13 @@ void TestsingledArray(){
     int arr[] = {1};
     assert(isSorted(arr, 1) == true);
 }
+
+//test case 5 
+void TestDescArray(){
+    int arr[] = {5, 4, 3, 2, 1};
+    assert(isSorted(arr, 5) == false);
+}
+
 main(){
     //calling the first test function
     TestSortedArray();
@@ -45,4 +52,7 @@ main(){
 
     //calling the fourth test function
     TestsingledArray();
+
+    //calling the fifth test function
+    TestDescArray();
 }
